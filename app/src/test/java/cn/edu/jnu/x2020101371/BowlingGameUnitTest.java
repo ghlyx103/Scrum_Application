@@ -30,8 +30,43 @@ public class BowlingGameUnitTest {
     @Test
     public void test200nes() {
         repeatedRoll(1,20);
-        //测试语句，测试是否等于0
+        //测试语句，测试是否等于20
         assertEquals(20, game.score());
+    }
+
+    //测试补中
+    @Test
+    public void testASpare() {
+        game.roll(5);
+        game.roll(5);//补中
+        game.roll(3);
+        //后面17次均为0
+        repeatedRoll(0,17);
+        //测试语句，测试是否等于13+3
+        assertEquals(16, game.score());
+    }
+
+    //一次全中的情况
+    @Test
+    public void testAStrike() {
+        game.roll(10);//全中
+        game.roll(5);
+        game.roll(3);
+        //后面17次均为0
+        repeatedRoll(0,16);
+        //测试语句，测试是否等于18+8
+        assertEquals(26, game.score());
+    }
+
+    //10轮全中
+    @Test
+    public void testFullStrike() {
+
+        for(int i = 0; i < 12; i ++) {
+            game.roll(10);//全中
+        }
+        //测试语句，测试是否等于300
+        assertEquals(300, game.score());
     }*/
 
     private void repeatedRoll(int pin, int times) {
