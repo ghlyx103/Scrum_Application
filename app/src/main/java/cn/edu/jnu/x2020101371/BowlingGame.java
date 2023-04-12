@@ -1,11 +1,13 @@
 package cn.edu.jnu.x2020101371;
 public class BowlingGame {
 
-    int pins[] = new int[21];
-    int currentPinIndex = 0;
+    int score = 0;
+    //int pins[] = new int[21];
+    //int currentPinIndex = 0;
 
     public void roll(int pin) {
         //pins[currentPinIndex ++] = pin;
+        score += pin;
     }
 
     public int score() {
@@ -37,7 +39,7 @@ public class BowlingGame {
         return totalScore;
 
 */
-        return 0;
+        return score;
     }
 }
 
