@@ -3,13 +3,13 @@ public class BowlingGame {
 
     int pins[] = new int[21];
     int currentPinIndex = 0;
-/*
+
     public void roll(int pin) {
         //pins[currentPinIndex ++] = pin;
     }
 
     public int score() {
-
+/*
         int totalScore = 0;
         int currentFrameScoreIndex = 0;//轮的分数
 
@@ -36,8 +36,8 @@ public class BowlingGame {
         }
         return totalScore;
 
-
+*/
         return 0;
-    }*/
+    }
 }
 
