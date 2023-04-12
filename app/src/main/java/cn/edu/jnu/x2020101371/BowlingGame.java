@@ -12,22 +12,7 @@ public class BowlingGame {
 
 
         int totalScore = 0;
-
-        for(int socreIndex = 0; socreIndex < pins.length; socreIndex ++)
-        {
-            totalScore += pins[socreIndex];
-            if(socreIndex < 19) {
-                if (10 == pins[socreIndex] + pins[socreIndex + 1]) {
-                    totalScore += pins[socreIndex + 2];
-                }
-
-                if(10 == pins[socreIndex])
-                {
-                    totalScore += pins[socreIndex + 1] + pins[socreIndex + 2];
-                }
-            }
-        }
- /*       int currentFrameScoreIndex = 0;//轮的分数
+        int currentFrameScoreIndex = 0;//轮的分数
 
         //引入轮的概念currentFrame
         for(int currentFrame = 0; currentFrame < 10; currentFrame ++)
@@ -50,9 +35,6 @@ public class BowlingGame {
             }
             currentFrameScoreIndex ++;
         }
-        return totalScore;
-
-*/
         return totalScore;
     }
 }
