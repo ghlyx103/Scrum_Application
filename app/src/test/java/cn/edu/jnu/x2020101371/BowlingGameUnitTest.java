@@ -26,14 +26,14 @@ public class BowlingGameUnitTest {
         //测试语句，测试是否等于0
         assertEquals(0, game.score());
     }
-/*
+
     @Test
     public void test200nes() {
         repeatedRoll(1,20);
         //测试语句，测试是否等于20
         assertEquals(20, game.score());
     }
-
+/*
     //测试补中
     @Test
     public void testASpare() {
