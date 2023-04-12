@@ -57,7 +57,7 @@ public class BowlingGameUnitTest {
         //测试语句，测试是否等于18+8
         assertEquals(26, game.score());
     }
-/*
+
     //10轮全中
     @Test
     public void testFullStrike() {
@@ -67,7 +67,7 @@ public class BowlingGameUnitTest {
         }
         //测试语句，测试是否等于300
         assertEquals(300, game.score());
-    }*/
+    }
 
     private void repeatedRoll(int pin, int times) {
         for (int i = 0; i < times; i++) {
