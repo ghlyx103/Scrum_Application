@@ -33,7 +33,7 @@ public class BowlingGameUnitTest {
         //测试语句，测试是否等于20
         assertEquals(20, game.score());
     }
-/*
+
     //测试补中
     @Test
     public void testASpare() {
@@ -45,7 +45,7 @@ public class BowlingGameUnitTest {
         //测试语句，测试是否等于13+3
         assertEquals(16, game.score());
     }
-
+/*
     //一次全中的情况
     @Test
     public void testAStrike() {
