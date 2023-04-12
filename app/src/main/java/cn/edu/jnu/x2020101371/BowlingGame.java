@@ -1,19 +1,28 @@
 package cn.edu.jnu.x2020101371;
 public class BowlingGame {
 
-    int score = 0;
-    //int pins[] = new int[21];
-    //int currentPinIndex = 0;
+    int pins[] = new int[21];
+    int currentPinIndex = 0;
 
     public void roll(int pin) {
-        //pins[currentPinIndex ++] = pin;
-        score += pin;
+        pins[currentPinIndex ++] = pin;
     }
 
     public int score() {
-/*
+
+
         int totalScore = 0;
-        int currentFrameScoreIndex = 0;//轮的分数
+
+        for(int socreIndex = 0; socreIndex < pins.length; socreIndex ++)
+        {
+            totalScore += pins[socreIndex];
+            if(socreIndex < 19) {
+                if (10 == pins[socreIndex] + pins[socreIndex + 1]) {
+                    totalScore += pins[socreIndex + 2];
+                }
+            }
+        }
+ /*       int currentFrameScoreIndex = 0;//轮的分数
 
         //引入轮的概念currentFrame
         for(int currentFrame = 0; currentFrame < 10; currentFrame ++)
@@ -39,7 +48,7 @@ public class BowlingGame {
         return totalScore;
 
 */
-        return score;
+        return totalScore;
     }
 }
 
