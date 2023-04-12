@@ -45,7 +45,7 @@ public class BowlingGameUnitTest {
         //测试语句，测试是否等于13+3
         assertEquals(16, game.score());
     }
-/*
+
     //一次全中的情况
     @Test
     public void testAStrike() {
@@ -57,7 +57,7 @@ public class BowlingGameUnitTest {
         //测试语句，测试是否等于18+8
         assertEquals(26, game.score());
     }
-
+/*
     //10轮全中
     @Test
     public void testFullStrike() {

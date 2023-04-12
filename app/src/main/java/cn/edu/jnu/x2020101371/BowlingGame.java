@@ -20,6 +20,11 @@ public class BowlingGame {
                 if (10 == pins[socreIndex] + pins[socreIndex + 1]) {
                     totalScore += pins[socreIndex + 2];
                 }
+
+                if(10 == pins[socreIndex])
+                {
+                    totalScore += pins[socreIndex + 1] + pins[socreIndex + 2];
+                }
             }
         }
  /*       int currentFrameScoreIndex = 0;//轮的分数
